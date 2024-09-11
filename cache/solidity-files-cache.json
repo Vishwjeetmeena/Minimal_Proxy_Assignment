@@ -339,8 +339,8 @@
       ]
     },
     "/Users/vishwjeetmeena/Desktop/Training/Blockchain/Proxies-Tutorial/MinimalProxy.sol/contracts/ERC20TokenFactory.sol": {
-      "lastModificationDate": 1725976566219,
-      "contentHash": "3ba7d9c117cc86e8a2c6067c54a9719e",
+      "lastModificationDate": 1726049974627,
+      "contentHash": "9411b28848c930e0f76f989ad382f712",
       "sourceName": "contracts/ERC20TokenFactory.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -369,8 +369,7 @@
       "imports": [
         "@openzeppelin/contracts/proxy/Clones.sol",
         "@openzeppelin/contracts/access/Ownable.sol",
-        "./ERC20Token.sol",
-        "hardhat/console.sol"
+        "./ERC20Token.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
