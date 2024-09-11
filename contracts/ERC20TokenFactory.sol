@@ -5,8 +5,6 @@ import "@openzeppelin/contracts/proxy/Clones.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import {ERC20Token} from "./ERC20Token.sol";
 
-import "hardhat/console.sol";
-
 /**
  * @title ERC20TokenFactory
  * @dev Factory contract to deploy ERC20 token contracts using the minimal proxy pattern (Clones).
@@ -35,6 +33,13 @@ contract ERC20TokenFactory is Ownable {
 
     /// @notice stores all the proxys which are deployed
     Proxy[] public factory;
+
+    
+    ///@dev Emitted when new clone is deployed
+    event Deploy(address indexed proxyAddress, string indexed name, string indexed symbol, uint256 totalSupply);
+    
+    ///@dev Emitted when fee mode is changed
+    event FeeMode(bool indexed FeeManager, bool indexed ReferralManager);
 
 
     /**
@@ -69,13 +74,11 @@ contract ERC20TokenFactory is Ownable {
 
         address newcontract = Clones.cloneDeterministic(implementation, salt);
 
-        console.log("Proxy contract address                 ", newcontract);
-
         factory.push(Proxy(newcontract, name, symbol, totalSupply));
 
-        console.log("There is something wrong with initialize");
-
         ERC20Token(newcontract).initialize(name, symbol, msg.sender, totalSupply-fee, owner(), fee);
+
+        emit Deploy(newcontract, name, symbol, totalSupply);
     }
 
     /**
@@ -85,6 +88,7 @@ contract ERC20TokenFactory is Ownable {
     function changeFeeMode() public onlyOwner {
         FeeManager = !FeeManager;
         ReferralManager = !ReferralManager;
+        emit FeeMode(FeeManager, ReferralManager);
     }
 
     /**
