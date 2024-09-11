@@ -1,10 +1,7 @@
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 
-const JAN_1ST_2030 = 1893456000;
-const ONE_GWEI = 1_000_000_000n;
+module.exports = buildModule("ERC20Token", (m) => {
+  const ERC20Token = m.contract("ERC20Token");
 
-module.exports = buildModule("Lock", (m) => {
-  
-
-  return { lock };
+  return { ERC20Token };
 });

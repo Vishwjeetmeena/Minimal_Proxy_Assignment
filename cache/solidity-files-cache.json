@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/vishwjeetmeena/Desktop/Training/Blockchain/Proxies-Tutorial/MinimalProxy.sol/contracts/ERC20Token.sol": {
-      "lastModificationDate": 1725977580130,
-      "contentHash": "a76314f395e859812bacee9389df54c9",
+      "lastModificationDate": 1726032328611,
+      "contentHash": "43530e3d724a1cd7716542eb1fbde51d",
       "sourceName": "contracts/ERC20Token.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -26,15 +26,11 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
       "imports": [
-        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
-        "hardhat/console.sol"
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
@@ -68,9 +64,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -107,9 +100,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -225,9 +215,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -264,9 +251,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -305,9 +289,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -344,9 +325,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -385,9 +363,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -429,9 +404,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -468,9 +440,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -513,9 +482,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -554,9 +520,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
